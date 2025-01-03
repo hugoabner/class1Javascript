@@ -19,10 +19,10 @@ export class DoubledLinkedList {
 	displayList () {
 		if (!this.head) return;
 		let current = this.head; 
-		do {
+		while (current) {
 			console.log(current.value);
 			current = current.next;
-		} while (current !== this.head);
+		}
 	}
 
 	/**@Metodo para ubicar un valor dentro de la lisra */
