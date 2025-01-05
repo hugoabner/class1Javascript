@@ -29,7 +29,7 @@ import {DoubledLinkedList} from './DoubleLinked.mjs';
 // circularLinkedList.displayList();
 
 
-/*Circular linked list */
+/*Doubly linked list */
 const doubledLinkedList = new DoubledLinkedList();
 
 doubledLinkedList.insertNode("doubly 1");
@@ -37,7 +37,7 @@ doubledLinkedList.insertNode("doubly 2");
 doubledLinkedList.insertNode("doubly 3");
 doubledLinkedList.displayList();
 console.log(doubledLinkedList.findValue("doubly 2"));
-doubledLinkedList.deleteNode("doubly 3");
+doubledLinkedList.deleteList("doubly 3");
 doubledLinkedList.displayList();
 doubledLinkedList.clearList();
 doubledLinkedList.displayList();

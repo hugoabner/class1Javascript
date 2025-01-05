@@ -71,7 +71,9 @@ export class DoubledLinkedList {
 			}
 			/*si el nodo del elemento que se va a eliminar es igual al nodo final*/
 			if (current === this.tail) {
-				this.prev.tail = null;
+				//entonces el valor proximo del elemento anterior va a ser igual a null
+				current.prev.next = null;
+				//entonces el nodo final va a ser igual al valor previo del nodo que se va a eliminar
 				this.tail = current.prev; 
 			}
 		}
