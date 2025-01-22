@@ -1,0 +1,9 @@
+# ABSTRACCION 
+```
+
+```
+# ENCAPSULACION 
+```
+
+```
+# INTANCIA DE UNA CLASE 
