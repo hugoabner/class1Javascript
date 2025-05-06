@@ -107,7 +107,12 @@ function ejercicioCinco() {
 6) Hacer una funcion que dado como dato de entrada nuestra fecha
 de cumpleaños, nos diga cuantos dias faltan para el mismo.
 */
-
-function name(params) {
-  
+function ejercicioSeis(date) {
+  let birthdayDate = new Date(date);
+  let currentDate = new Date();
+  let dayRest = Math.floor(
+    (currentDate.getTime() - birthdayDate.getTime()) / (1000 * 60 * 60 * 24)
+  );
+  console.log(birthdayDate, currentDate, dayRest);
 }
+ejercicioSeis("1 may 2025");
