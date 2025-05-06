@@ -111,8 +111,20 @@ function ejercicioSeis(date) {
   let birthdayDate = new Date(date);
   let currentDate = new Date();
   let dayRest = Math.floor(
-    (currentDate.getTime() - birthdayDate.getTime()) / (1000 * 60 * 60 * 24)
+    (birthdayDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24)
   );
   console.log(birthdayDate, currentDate, dayRest);
 }
-ejercicioSeis("1 may 2025");
+ejercicioSeis("10 july 2025");
+
+/**
+7) Realizar una funcion que dado como dato de entrada
+una oracion, nos devuelva un arreglo que contenga todas
+las palabras usadas en la oracion  
+*/
+
+function ejercicioSiete(text = "hola mundo") {
+  let words = text.split(' ');
+  console.log(words);
+}
+ejercicioSiete("Buenos dias mi nombre es hugo y mi apellido es palomino")
