@@ -21,7 +21,7 @@ function ejercicioUno(a = 0, b = 0, operation = "suma") {
       return console.error("La operacion" + operation + "no existe");
   }
 }
-ejercicioUno();
+// ejercicioUno();
 
 /**
 2)Realizar una funcion que almacene en un arreglo
@@ -37,7 +37,7 @@ function ejercicioDos(a = 0, b = 0) {
   }
   console.log(nums);
 }
-ejercicioDos(3, 9);
+// ejercicioDos(3, 9);
 
 /**
 3)Realizar una tabla de multiplicacion de un numero (a)
@@ -54,7 +54,7 @@ function ejercicioTres(a = 0, x = 12) {
     }
   }
 }
-ejercicioTres(5, 20)
+// ejercicioTres(5, 20)
 
 /**
 4) Hacer una funcion que filtre todos los numeros 
@@ -65,13 +65,13 @@ del 1 al 100
 function ejercicioCuatro() {
   let nums = [];
   for (let i = 1; i <= 100; i++) {
-    nums.push(i)
+    nums.push(i);
   }
   let multiplos = [];
   console.log("Este el mi arreglo", nums);
   nums.forEach((e) => {
-    if (e % 3 === 0 ){
-      multiplos.push(e)
+    if (e % 3 === 0) {
+      multiplos.push(e);
     }
     if (e < 25 && e > 10) {
       console.log("RPTA", e);
@@ -79,4 +79,35 @@ function ejercicioCuatro() {
   });
   console.log(multiplos);
 }
-ejercicioCuatro()
+// ejercicioCuatro()
+
+/**
+5) Hacer una funcion que haga de forma aleatoria un numero entre 1 y 1000.
+y que a ese numero le saque su mitad, el doble y su raiz cuadrada. 
+*/
+
+function ejercicioCinco() {
+  let num = Math.floor(Math.random() * (1000 - 1) + 1);
+  console.log("El numero es: " + num);
+  let mitad = num / 2;
+  let doble = num * 2;
+  let raizCuadrada = Math.sqrt(num);
+  console.log(
+    "La mitad es:" +
+      mitad +
+      " el doble es: " +
+      doble +
+      " y la raiz es: " +
+      raizCuadrada
+  );
+}
+// ejercicioCinco();
+
+/**
+6) Hacer una funcion que dado como dato de entrada nuestra fecha
+de cumpleaños, nos diga cuantos dias faltan para el mismo.
+*/
+
+function name(params) {
+  
+}
