@@ -115,7 +115,7 @@ function ejercicioSeis(date) {
   );
   console.log(birthdayDate, currentDate, dayRest);
 }
-ejercicioSeis("10 july 2025");
+// ejercicioSeis("10 july 2025");
 
 /**
 7) Realizar una funcion que dado como dato de entrada
@@ -124,7 +124,47 @@ las palabras usadas en la oracion
 */
 
 function ejercicioSiete(text = "hola mundo") {
-  let words = text.split(' ');
+  let words = text.split(" ");
   console.log(words);
 }
-ejercicioSiete("Buenos dias mi nombre es hugo y mi apellido es palomino")
+// ejercicioSiete("Buenos dias mi nombre es hugo y mi apellido es palomino");
+
+
+/**
+8) Crea 5 objetos y almacenalos en un arreglo. Debes
+hacer una funcion para filtrar a todas las personas
+que tengan el nombre "Luis" y que esa misma funcion
+cuales son mayores de edad   
+*/
+
+function ejercicioOcho() {
+  const personas = [
+    {
+      nombre: "Luis",
+      apellido: "Fernandes",
+      edad: 60
+    },
+    {
+      nombre: "Kiko",
+      apellido: "Perez",
+      edad: 13
+    },
+    {
+      nombre: "Ramon",
+      apellido: "Santos",
+      edad: 10
+    },
+    {
+      nombre: "Luis",
+      apellido: "Alvarez",
+      edad: 18
+    },
+    {
+      nombre: "Luis",
+      apellido: "Mendoza",
+      edad: 34
+    }
+  ]
+  console.log(personas);
+}
+ejercicioOcho()
