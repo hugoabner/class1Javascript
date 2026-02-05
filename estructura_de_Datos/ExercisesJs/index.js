@@ -7,7 +7,8 @@ los valores (a y b) y uno el nombre de la operacion
 (en minuscula). Si el parametro de la operacion no
 es valido que mande un error personalizado ala consola.   
 */
-function ejercicioUno(a = 0, b = 0, operation = "suma") {
+// nombre adecuado para la funcion
+function calcularOperacion(a = 0, b = 0, operation = "suma") {
   switch (operation) {
     case "suma":
       return console.log(a + b);
@@ -21,7 +22,6 @@ function ejercicioUno(a = 0, b = 0, operation = "suma") {
       return console.error("La operacion" + operation + "no existe");
   }
 }
-// ejercicioUno();
 
 /**
 2)Realizar una funcion que almacene en un arreglo
@@ -164,11 +164,11 @@ function ejercicioOcho() {
       edad: 34,
     },
   ];
-  personas.forEach((e) =>{ 
+  personas.forEach((e) => {
     if (e.nombre === "Luis") {
       console.log("nombre", e.nombre + e.apellido);
     }
-  })
+  });
 }
 // ejercicioOcho()
 
@@ -178,208 +178,202 @@ function ejercicioOcho() {
 // Fri Feb 28 2025 12:37:05 GMT-0500 (hora estándar de Perú)
 // Tue May 06 2025 17:03:53 GMT-0500 (hora estándar de Perú)
 function ejercicioNueve() {
-  const timestamp =  "1746569033";
+  const timestamp = "1746569033";
   const fecha = new Date(Number(timestamp) * 1000);
   console.log("timestamp convertido en fecha", fecha);
 }
-ejercicioNueve()
-
-
+// ejercicioNueve();
 
 function map() {
-
   const data = [
     {
-        telefono: "51929701748",
-        name: "",
-        timestamp: "1746569033",
-        origen: "OUT"
+      telefono: "51929701748",
+      name: "",
+      timestamp: "1746569033",
+      origen: "OUT",
     },
     {
-        telefono: "51985996215",
-        name: "~",
-        timestamp: "1740764225",
-        origen: "OUT"
+      telefono: "51985996215",
+      name: "~",
+      timestamp: "1740764225",
+      origen: "OUT",
     },
     {
-        telefono: "51959689277",
-        name: "",
-        timestamp: "1746543886",
-        origen: "OUT"
+      telefono: "51959689277",
+      name: "",
+      timestamp: "1746543886",
+      origen: "OUT",
     },
     {
-        telefono: "51926018502",
-        name: "~",
-        timestamp: "1746552673",
-        origen: "OUT"
+      telefono: "51926018502",
+      name: "~",
+      timestamp: "1746552673",
+      origen: "OUT",
     },
     {
-        telefono: "56935029770",
-        name: "~",
-        timestamp: "1746535460",
-        origen: "OUT"
+      telefono: "56935029770",
+      name: "~",
+      timestamp: "1746535460",
+      origen: "OUT",
     },
     {
-        telefono: "56951039986",
-        name: "~",
-        timestamp: "1746538089",
-        origen: "OUT"
+      telefono: "56951039986",
+      name: "~",
+      timestamp: "1746538089",
+      origen: "OUT",
     },
     {
-        telefono: "51913342094",
-        name: "~",
-        timestamp: "1742244570",
-        origen: "OUT"
+      telefono: "51913342094",
+      name: "~",
+      timestamp: "1742244570",
+      origen: "OUT",
     },
     {
-        telefono: "51913546938",
-        name: "~",
-        timestamp: "1743006999",
-        origen: "OUT"
+      telefono: "51913546938",
+      name: "~",
+      timestamp: "1743006999",
+      origen: "OUT",
     },
     {
-        telefono: "51945531391",
-        name: "~",
-        timestamp: "1746550511",
-        origen: "OUT"
+      telefono: "51945531391",
+      name: "~",
+      timestamp: "1746550511",
+      origen: "OUT",
     },
     {
-        telefono: "56977932495",
-        name: "~",
-        timestamp: "1746543815",
-        origen: "OUT"
+      telefono: "56977932495",
+      name: "~",
+      timestamp: "1746543815",
+      origen: "OUT",
     },
     {
-        telefono: "56981367942",
-        name: "~",
-        timestamp: "1744646758",
-        origen: "OUT"
+      telefono: "56981367942",
+      name: "~",
+      timestamp: "1744646758",
+      origen: "OUT",
     },
     {
-        telefono: "56956999670",
-        name: "~",
-        timestamp: "1744750465",
-        origen: "OUT"
+      telefono: "56956999670",
+      name: "~",
+      timestamp: "1744750465",
+      origen: "OUT",
     },
     {
-        telefono: "56962339835",
-        name: "~",
-        timestamp: "1744812808",
-        origen: "OUT"
+      telefono: "56962339835",
+      name: "~",
+      timestamp: "1744812808",
+      origen: "OUT",
     },
     {
-        telefono: "56950716304",
-        name: "~",
-        timestamp: "1746280519",
-        origen: "OUT"
+      telefono: "56950716304",
+      name: "~",
+      timestamp: "1746280519",
+      origen: "OUT",
     },
     {
-        telefono: "56997416505",
-        name: "~",
-        timestamp: "1745510202",
-        origen: "OUT"
+      telefono: "56997416505",
+      name: "~",
+      timestamp: "1745510202",
+      origen: "OUT",
     },
     {
-        telefono: "56983791165",
-        name: "~",
-        timestamp: "1745508079",
-        origen: "OUT"
+      telefono: "56983791165",
+      name: "~",
+      timestamp: "1745508079",
+      origen: "OUT",
     },
     {
-        telefono: "56982022476",
-        name: "~",
-        timestamp: "1746191885",
-        origen: "OUT"
+      telefono: "56982022476",
+      name: "~",
+      timestamp: "1746191885",
+      origen: "OUT",
     },
     {
-        telefono: "56962503418",
-        name: "~",
-        timestamp: "1746535480",
-        origen: "OUT"
+      telefono: "56962503418",
+      name: "~",
+      timestamp: "1746535480",
+      origen: "OUT",
     },
     {
-        telefono: "56945593190",
-        name: "~",
-        timestamp: "1746535463",
-        origen: "OUT"
+      telefono: "56945593190",
+      name: "~",
+      timestamp: "1746535463",
+      origen: "OUT",
     },
     {
-        telefono: "56941431832",
-        name: "~",
-        timestamp: "1746102212",
-        origen: "OUT"
+      telefono: "56941431832",
+      name: "~",
+      timestamp: "1746102212",
+      origen: "OUT",
     },
     {
-        telefono: "56985514312",
-        name: "~",
-        timestamp: "1746109909",
-        origen: "OUT"
+      telefono: "56985514312",
+      name: "~",
+      timestamp: "1746109909",
+      origen: "OUT",
     },
     {
-        telefono: "56962849442",
-        name: "~",
-        timestamp: "1746456356",
-        origen: "OUT"
+      telefono: "56962849442",
+      name: "~",
+      timestamp: "1746456356",
+      origen: "OUT",
     },
     {
-        telefono: "56954716585",
-        name: "~",
-        timestamp: "1746192621",
-        origen: "OUT"
+      telefono: "56954716585",
+      name: "~",
+      timestamp: "1746192621",
+      origen: "OUT",
     },
     {
-        telefono: "56955269572",
-        name: "~",
-        timestamp: "1746192916",
-        origen: "OUT"
+      telefono: "56955269572",
+      name: "~",
+      timestamp: "1746192916",
+      origen: "OUT",
     },
     {
-        telefono: "56995458579",
-        name: "~",
-        timestamp: "1746455679",
-        origen: "OUT"
+      telefono: "56995458579",
+      name: "~",
+      timestamp: "1746455679",
+      origen: "OUT",
     },
     {
-        telefono: "56971202025",
-        name: "~",
-        timestamp: "1746456105",
-        origen: "OUT"
+      telefono: "56971202025",
+      name: "~",
+      timestamp: "1746456105",
+      origen: "OUT",
     },
     {
-        telefono: "56988996015",
-        name: "~",
-        timestamp: "1746456483",
-        origen: "OUT"
-    }
-
-  ]
-  const mapa = new Map()
-  data.forEach(e => {
-    const telefono = e.telefono
+      telefono: "56988996015",
+      name: "~",
+      timestamp: "1746456483",
+      origen: "OUT",
+    },
+  ];
+  const mapa = new Map();
+  data.forEach((e) => {
+    const telefono = e.telefono;
     mapa.set(telefono, {
       telefono: telefono,
       name: e.name,
       timestamp: e.timestamp,
-      origen: e.origen
-    })
+      origen: e.origen,
+    });
   });
-  
+
   for (const [key, value] of mapa.entries()) {
     if (value.name.trim() === "") {
-      value.name = "palomino"
+      value.name = "palomino";
     }
   }
-  // recibe como parametro un objeto iterable 
-  const valor = mapa.values()
+  // recibe como parametro un objeto iterable
+  const valor = mapa.values();
   console.log("valores", valor.or);
-  // ordenar de forma descendente, es decir del mas reciente hacia al mas antiguo 
+  // ordenar de forma descendente, es decir del mas reciente hacia al mas antiguo
   // values.sort((a, b) => Number(b.timestamp) - Number(a.timestamp));
   // ordenar de forma ascendente es decir del mas antiguo hacia el mas reciente
   // values.sort()
-
 }
 map();
-
 
 // {
 //   "origen": "OUT",
@@ -455,3 +449,84 @@ map();
 //   "fechaDeActualizacion": "2025-04-08T17:48:51-05:00",
 //   "name": "inmobiliaria boreal"
 // },
+
+function getCurrentDate() {
+  const fechaActual = new Date();
+  const dia = String(fechaActual.getDate()).padStart(2, "0");
+  const mes = String(fechaActual.getMonth() + 1).padStart(2, "0");
+  const anio = fechaActual.getFullYear();
+  console.log("la fecha de hoy: " + `${dia}-${mes}-${anio}`);
+}
+getCurrentDate();
+
+function getDescendingData() {
+  const data = [
+    {
+      telefono: "51929701748",
+      name: "",
+      fecha: "2025-01-21",
+      hora: "19:26:38",
+    },
+    {
+      telefono: "51985996215",
+      name: "~",
+      fecha: "2025-03-21",
+      hora: "19:26:28",
+    },
+    {
+      telefono: "51959689277",
+      name: "",
+      fecha: "2025-12-21",
+      hora: "19:26:25",
+    },
+    {
+      telefono: "51926018502",
+      name: "~",
+      fecha: "2025-05-25",
+      hora: "16:21:22",
+    },
+    {
+      telefono: "56935029770",
+      name: "~",
+      fecha: "2025-05-22",
+      hora: "16:14:46",
+    },
+    {
+      telefono: "56951039986",
+      name: "~",
+      fecha: "2025-05-22",
+      hora: "16:14:39",
+    },
+    {
+      telefono: "51913342094",
+      name: "~",
+      fecha: "2025-05-22",
+      hora: "16:13:29",
+    },
+    {
+      telefono: "51913546938",
+      name: "~",
+      fecha: "2025-05-22",
+      hora: "16:12:33",
+    },
+  ];
+  data.forEach(element => {
+    element.fecha = element.fecha + " " + element.hora
+  });
+  const format = data.toSorted((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+  console.log("arra", format);
+}
+
+getDescendingData()
+
+
+function convertTimestamp() {
+  const timestamp = 1748448645
+  const date = new Date(timestamp);
+  const today = new Date();
+  const isToday = date.toDateString() === today.toDateString();
+  console.log("isToday", isToday);
+}
+
+convertTimestamp()
